@@ -1,0 +1,107 @@
+body {
+    background-color: grey;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.singolo {
+    margin: 0 auto;
+    max-width: 1020px;
+    box-shadow: indigo;
+}
+
+.portfolio {
+    height: 864px;
+    background-color: #2d303a;
+}
+
+.portfolio-navi {
+    color: #666d89;
+    padding: 58px 40px 20px 40px;
+}
+
+.portfolio-navi h1 {
+    margin: 0 0 17px 0;
+}
+
+.portfolio-navi p {
+    margin: 0 0 10px 0;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.portfolio-navi button {
+    height: 22px;
+    background-color: #2d303a;
+    border-radius: 10%;
+    border: solid #666d89 1px;
+    color: #666d89;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    margin-right: 10px;
+}
+
+.portfolio-pictures {
+    padding: 0 20px 0 40px;
+}
+
+.colums {
+    display: flex;
+}
+
+.colums img {
+    margin-bottom: 17px;
+}
+
+.portfolio-bottom {
+    height: 6px;
+    background-color: #323746;
+}
+
+.about-us {
+    height: 728px;
+    background-color: #f2f2f2;
+    color: #9da3b9;
+}
+
+.staff {
+    padding: 37px 40px 50px 39px;
+}
+
+.staff h1 {
+    color: #666d89;
+}
+
+.staff p {
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 16px 0 0 0;
+}
+
+.staff-colums {
+    margin-top: 77px;
+    display: flex;
+}
+
+.colum-staff {
+    margin-right: 19px;
+}
+
+.colum-staff h4 {
+    color: #666d89;
+}
+
+.last-colum {
+    margin-left: 2px;
+}
+
+.about-us-bottom {
+    height: 6px;
+    background-color: #ffffff;
+}
