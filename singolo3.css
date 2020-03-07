@@ -1,0 +1,153 @@
+body {
+    background-color: grey;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.singolo {
+    margin: 0 auto;
+    max-width: 1020px;
+    box-shadow: indigo;
+}
+
+.get-quote {
+    height: 648px;
+    background-color: #f06c64;
+}
+
+.get-quote-content {
+    padding: 58px 25px 0 40px;
+}
+
+.get-quote h1 {
+    margin: 0 0 20px 0;
+    color: #f0d8d9;
+    font-size: 1.9em;
+}
+
+.get-text {
+    color: #f0d8d9;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.form-area {
+    display: flex;
+    margin-top: 43px;
+}
+
+.form {
+    width: 650px;
+}
+
+.form input {
+    width: 619px;
+    height: 36px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+::placeholder {
+    color: #f08586;
+    font-size: 11px;
+    padding-left: 15px;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #f08586;
+    padding: 9px 0 0 13px;
+    letter-spacing: 0.1px;
+}
+
+.form textarea {
+    overflow: hidden;
+    width: 615px;
+    height: 198px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+.form-colum {
+    margin: -2px 0 0 21px;
+}
+
+.form-colum h4 {
+    margin: 0;
+    color: #f0d8d9;
+    font-size: 1.1em;
+}
+
+.form-info {
+    width: 301px;
+    height: 162px;
+}
+
+.info-text {
+    color: #f0d8d9;
+    font-family: Lato;
+    font-size: 11px;
+    margin-top: 9px;
+    line-height: 200%;
+}
+
+.info-location {
+    margin: 20px 0 0 3px;
+}
+
+.location-text {
+    margin-left: 13px;
+    color: #f0d8d9;
+    font-size: 11px;
+}
+
+.get-quote-bottom {
+    height: 6px;
+    background-color: #ea676b
+}
+
+.phone-location {
+    margin: 2px 0 0 -2px;
+}
+
+.mail-location {
+    margin: 3px 0 0 -3px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    height: 76px;
+    background-color: #2d303a;
+    justify-content: space-between;
+}
+
+.footer-info {
+    position: relative;
+    color: #666d89;
+    font-size: 12px;
+    font-weight: lighter;
+    top: 18px;
+    left: 42px;
+}
+
+.footer-social {
+    position: relative;
+    top: 22px;
+    right: 40px;
+}
+
+.footer-social img {
+    margin-left: 5px;
+}
+
+.footer-social img:hover {
+    cursor: pointer;
+}
