@@ -1,1 +1,1 @@
-https://github.com/SiarheiDziadkou/singolo/blob/master/index.html
+https://siarheidziadkou.github.io/singolo/index.html
