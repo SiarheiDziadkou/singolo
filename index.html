@@ -13,7 +13,7 @@
     <div class="singolo">
         <div class="header">
             <h1 class="logo">singolo<span style="color: #f06c64">*</span></h1>
-            <ul class="navi">
+            <ul id="navi">
                 <li><a class="active">HOME</a></li>
                 <li><a>SERVICES</a></li>
                 <li><a>PORTFOLIO</a></li>
@@ -191,10 +191,18 @@
                         <form action="URL">
                             <input type="text" name="name" placeholder="Name (Required)">
                             <input type="email" name="email" placeholder="Email (Required)">
-                            <input name="subject" placeholder="Subject">
-                            <textarea placeholder="Describe your project in detail..."></textarea>
-                            <input type="submit">
+                            <input name="subject" id="subject" placeholder="Subject">
+                            <textarea id="description" placeholder="Describe your project in detail..."></textarea>
+                            <button type="button" id="submit-btn">Submit</button>
                         </form>
+                    </div>
+                    <div id="message-block" class="popup-hidden">
+                        <div id="popup-message">
+                            <p>The letter was sent</p>
+                            <p><span id="subject-result"></span></p>
+                            <p><span id="description-result"></span></p>
+                            <button id="close-btn">OK</button>
+                        </div>
                     </div>
                     <div class="form-colum">
                         <h4>Contact Information</h4>
@@ -226,6 +234,7 @@
 
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
