@@ -2,11 +2,25 @@ const menu = document.getElementById('navi'),
     submitButton = document.getElementById('submit-btn'),
     closeButton = document.getElementById('close-btn');
 
+// task Header
 
-menu.addEventListener('click', (event) => {
-    menu.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
-});
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    const currentPosition = window.scrollY;
+
+    document.querySelectorAll('.singolo>div').forEach((el) => {
+
+        if (el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight) > currentPosition) {
+            document.querySelectorAll('#navi a').forEach((a) => {
+                a.classList.remove('active');
+                if (el.getAttribute('class') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
+        }
+    })
+}
 
 submitButton.addEventListener('click', () => {
     const subject = document.getElementById('subject').value.toString();
@@ -21,3 +35,10 @@ closeButton.addEventListener('click', () => {
     document.getElementById('description-result').innerText = '';
     document.getElementById('message-block').classList.add('popup-hidden');
 });
+
+/*
+menu.addEventListener('click', (event) => {
+    menu.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+});
+*/

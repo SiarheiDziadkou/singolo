@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: grey;
     margin: 0;
@@ -10,11 +14,18 @@ body {
     box-shadow: indigo;
 }
 
-.header {
+.home {
     height: 89px;
     background-color: #2d303a;
+}
+
+.fix-menu {
+    height: 89px;
+    width: 1020px;
+    background-color: #2d303a;
     display: flex;
-    position: relative;
+    position: fixed;
+    z-index: 50;
 }
 
 .logo {
@@ -111,7 +122,7 @@ body {
     background-color: #ea676b;
 }
 
-.content {
+.services {
     height: 494px;
     background-color: #f2f2f2;
 }
@@ -297,7 +308,7 @@ body {
     background-color: #323746;
 }
 
-.about-us {
+.about {
     height: 728px;
     background-color: #f2f2f2;
 }
@@ -380,7 +391,7 @@ body {
     background-color: #ffffff;
 }
 
-.get-quote {
+.contact {
     height: 648px;
     background-color: #f06c64;
 }
@@ -389,7 +400,7 @@ body {
     padding: 58px 25px 0 40px;
 }
 
-.get-quote h1 {
+.contact h1 {
     margin: 0 0 20px 0;
     color: #f0d8d9;
     font-size: 1.9em;
