@@ -1,9 +1,5 @@
-const menu = document.getElementById('navi'),
-    submitButton = document.getElementById('submit-btn'),
-    closeButton = document.getElementById('close-btn');
-
-// task Header
-
+// --- task Header ---
+//navigation
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
@@ -21,24 +17,85 @@ function onScroll(event) {
         }
     })
 }
+// slider
+let slide = document.querySelectorAll('.slider div');
+let currentSlide = 0;
+
+function slider() {
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].classList.add('none-opacity');
+
+    }
+    slide[currentSlide].classList.remove('none-opacity');
+
+    if (currentSlide + 1 == slide.length) {
+        currentSlide = 0;
+    } else {
+        currentSlide++;
+    }
+}
+document.querySelector('.arrow-left').onclick = slider;
+document.querySelector('.arrow-right').onclick = slider;
+
+//screen vertical phone
+const phoneVertical = document.getElementById('phone-vertical'),
+    screenVertical = document.getElementById('off-vertical');
+
+phoneVertical.addEventListener('click', () => {
+    screenVertical.classList.toggle('switch');
+});
+//screen horizontal phone
+const phoneHorizontal = document.getElementById('phone-horizontal'),
+    screenHorizontal = document.getElementById('off-horizontal');
+
+phoneHorizontal.addEventListener('click', () => {
+    screenHorizontal.classList.toggle('switch');
+});
+
+
+// --- task Portfolio ---
+//tab buttons
+const portfolioNavi = document.getElementById('portfolio-buttons');
+
+portfolioNavi.addEventListener('click', (event) => {
+    portfolioNavi.querySelectorAll('a').forEach(el => el.classList.remove('active-button'));
+    event.target.classList.add('active-button');
+});
+// border for pictures
+const picturesArea = document.getElementById('colums');
+
+picturesArea.addEventListener('click', (event) => {
+    picturesArea.querySelectorAll('img').forEach(el => el.classList.remove('pictures-border'));
+    event.target.classList.add('pictures-border');
+});
+
+
+
+// --- task Get a quote ---
+const submitButton = document.getElementById('submit-btn'),
+    closeButton = document.getElementById('close-btn');
 
 submitButton.addEventListener('click', () => {
     const subject = document.getElementById('subject').value.toString();
-    document.getElementById('subject-result').innerText = 'Subject: ' + subject;
+    if (subject.value == '') {
+        document.getElementById('subject-result').innerText = 'No subject';
+    } else {
+        document.getElementById('subject-result').innerText = 'Subject: ' + subject;
+    }
     const description = document.getElementById('description').value.toString();
-    document.getElementById('description-result').innerText = 'Description: ' + description;
+    if (description.value == '') {
+        document.getElementById('description-result').innerText = 'No description';
+    } else {
+        document.getElementById('description-result').innerText = 'Description: ' + description;
+    }
     document.getElementById('message-block').classList.remove('popup-hidden');
 });
 
 closeButton.addEventListener('click', () => {
     document.getElementById('subject-result').innerText = '';
     document.getElementById('description-result').innerText = '';
+    let formArea = document.getElementsByTagName('form');
+    formArea[0].reset();
     document.getElementById('message-block').classList.add('popup-hidden');
-});
 
-/*
-menu.addEventListener('click', (event) => {
-    menu.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
 });
-*/

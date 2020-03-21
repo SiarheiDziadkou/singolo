@@ -25,10 +25,20 @@
             </div>
         </div>
         <div class="header-bottom"></div>
-        <div class="slider">
+        <div class="slider-wrap">
+            <div class="slider">
+                <div class="none-opacity">
+                    <img src="assests/Slide-2.png">
+                </div>
+                <div>
+                    <img src="assests/Slide-bg.png" class="slide-background">
+                    <img src="assests/Phone vertical.png" id="phone-vertical">
+                    <img src="assests/Phone horizontal.png" id="phone-horizontal">
+                    <img src="assests/Screen-off1.png" id="off-vertical">
+                    <img src="assests/Screen-off2.png" id="off-horizontal">
+                </div>
+            </div>
             <img class="arrow-left" src="assests/Arrow left.png">
-            <img class="phone-vertical" src="assests/Phone vertical.png">
-            <img class="phone-horizontal" src="assests/Phone horizontal.png">
             <img class="arrow-right" src="assests/Arrow right.png">
         </div>
         <div class="slider-bottom"></div>
@@ -103,13 +113,15 @@
         <div class="content-bottom"></div>
         <div class="portfolio">
             <a name="portfolio"></a>
-            <div class="portfolio-navi">
+            <div id="portfolio-navi">
                 <h1>Portfolio</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum nec ex.</p>
-                <a id="all">All</a> <a id="web-design">Web Design</a> <a id="graphic-design">Graphic Design</a> <a id="artwork">Artwork</a>
+                <div id="portfolio-buttons">
+                    <a class="all active-button">All</a> <a class="web-design">Web Design</a> <a class="graphic-design">Graphic Design</a> <a class="artwork">Artwork</a>
+                </div>
             </div>
             <div class="portfolio-pictures">
-                <div class="colums">
+                <div id="colums">
                     <div>
                         <img src="assests/portfolio/Image01.png" alt="Image01">
                         <img src="assests/portfolio/Image05.png" alt="Image05">
