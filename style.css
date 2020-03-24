@@ -16,17 +16,25 @@ body {
 
 .home {
     height: 89px;
-    background-color: #2d303a;
-}
-
-.fix-menu {
-    height: 89px;
-    width: 1020px;
+    width: 100%;
+    max-width: 1020px;
     background-color: #2d303a;
     display: flex;
     position: fixed;
     z-index: 50;
 }
+
+
+/*
+.fix-menu {
+    height: 89px;
+    max-width: 100%;
+    background-color: #2d303a;
+    display: flex;
+    position: fixed;
+    z-index: 50;
+}
+*/
 
 .logo {
     text-transform: uppercase;
@@ -70,8 +78,9 @@ body {
 
 .header-bottom {
     height: 6px;
-    width: 1020px;
+    max-width: 1020px;
     background-color: #323746;
+    padding-top: 89px;
 }
 
 .slider-wrap {
@@ -157,7 +166,7 @@ body {
 
 .slider-bottom {
     height: 6px;
-    width: 1020px;
+    max-width: 1020px;
     background-color: #ea676b;
 }
 
@@ -269,7 +278,7 @@ body {
 
 .content-bottom {
     height: 6px;
-    width: 1020px;
+    max-width: 1020px;
     background-color: #ffffff;
 }
 
@@ -473,11 +482,11 @@ body {
 }
 
 .form {
-    width: 650px;
+    max-width: 64.5%;
 }
 
 .form input {
-    width: 619px;
+    width: 100%;
     height: 36px;
     background-color: #d6564f;
     color: #f0d8d9;
@@ -500,7 +509,7 @@ textarea::-webkit-input-placeholder {
 
 .form textarea {
     overflow: hidden;
-    width: 615px;
+    width: 100%;
     height: 198px;
     background-color: #d6564f;
     color: #f0d8d9;
@@ -510,6 +519,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .form-colum {
+    width: 35.5%;
     margin: -2px 0 0 21px;
 }
 
