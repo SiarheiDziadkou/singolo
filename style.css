@@ -1,5 +1,7 @@
 html {
+    position: relative;
     scroll-behavior: smooth;
+    min-width: 320px;
 }
 
 body {
@@ -151,7 +153,7 @@ body {
 #phone-horizontal {
     position: absolute;
     top: 174px;
-    left: 425px;
+    right: 111px;
 }
 
 #off-horizontal {
@@ -201,6 +203,7 @@ body {
 
 .info-bottom {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .first-colum {
@@ -349,7 +352,7 @@ body {
 }
 
 .portfolio-pictures {
-    padding: 0 20px 0 40px;
+    padding: 0 0 0 40px;
 }
 
 .pictures-border {
@@ -359,10 +362,15 @@ body {
 
 #colums {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #colums img {
-    margin-bottom: 17px;
+    margin: 5px;
+    max-width: 220px;
+    width: 100%;
+    max-height: 187px;
+    height: 100%;
 }
 
 .portfolio-bottom {
@@ -400,6 +408,13 @@ body {
 
 .colum-staff {
     margin-right: 19px;
+}
+
+.colum-staff .face {
+    max-width: 300px;
+    width: 100%;
+    max-height: 300px;
+    height: auto;
 }
 
 .staff-info h3 {
@@ -620,3 +635,39 @@ textarea::-webkit-input-placeholder {
 .footer-social img:hover {
     cursor: pointer;
 }
+
+
+/*768px <= width < 1020px*/
+
+@media all and (max-width: 1020px) {
+    .services {
+        height: 630px;
+    }
+    .portfolio {
+        height: 1000px;
+    }
+    #phone-vertical {
+        max-width: 181px;
+        max-height: 364px;
+    }
+    #off-vertical {
+        display: none;
+    }
+    #phone-horizontal {
+        max-width: 364px;
+        max-height: 181px;
+    }
+    #off-horizontal {
+        display: none;
+    }
+}
+
+
+/*375px <= width < 768px*/
+
+@media all and (max-width: 768px) {}
+
+
+/*width < 375px*/
+
+@media all and (max-width: 375px) {}
