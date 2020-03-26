@@ -11,9 +11,23 @@
 
 <body>
     <div class="singolo">
-        <div class="home">
-            <a name="home"></a>
 
+        <div class="home">
+            <div class="burger-menu">
+                <a href="#" id="burger-menu__button">
+                    <span class="burger-menu__lines"></span>
+                </a>
+                <div class="wrap-nav">
+                    <nav class="burger-menu__nav">
+                        <a href="#home" class="active burger-menu__link">HOME</a>
+                        <a href="#services" class="burger-menu__link">SERVICES</a>
+                        <a href="#portfolio" class="burger-menu__link">PORTFOLIO</a>
+                        <a href="#about" class="burger-menu__link">ABOUT</a>
+                        <a href="#contact" class="burger-menu__link">CONTACT</a>
+                    </nav>
+                </div>
+                <div class="burger-menu__overlay"></div>
+            </div>
             <h1 class="logo">singolo<span style="color: #f06c64">*</span></h1>
             <ul id="navi">
                 <li><a class="active" href="#home">HOME</a></li>
@@ -22,8 +36,8 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-
         </div>
+        <a name="home"></a>
         <div class="header-bottom"></div>
         <div class="slider-wrap">
             <div class="slider">
@@ -31,11 +45,10 @@
                     <img src="assests/Slide-2.png">
                 </div>
                 <div>
-                    <img src="assests/Slide-bg.png" class="slide-background">
                     <img src="assests/Phone vertical.png" id="phone-vertical">
                     <img src="assests/Phone horizontal.png" id="phone-horizontal">
-                    <img src="assests/Screen-off1.png" id="off-vertical">
-                    <img src="assests/Screen-off2.png" id="off-horizontal">
+                    <img src="assests/Screen-off1.png" id="off-vertical" class="switch">
+                    <img src="assests/Screen-off2.png" id="off-horizontal" class="switch">
                 </div>
             </div>
             <img class="arrow-left" src="assests/Arrow left.png">
@@ -152,7 +165,7 @@
                             <h3>Adam Jensen</h3>
                             <p>Quisque luctus, quam eget molestie commodo, lacuspurus cursus purus, nec rutrum tellus dolor id lorem.</p>
                         </div>
-                        <a name="contact"></a>
+
                         <div class="social">
                             <img src="assests/Social/facebook.png" alt="facebook">
                             <img src="assests/Social/google+.png" alt="google+">
@@ -190,8 +203,10 @@
                 </div>
             </div>
         </div>
+        <a name="contact"></a>
         <div class="about-us-bottom"></div>
         <div class="contact">
+
             <div class="get-quote-content">
                 <h1>Get a Quote</h1>
                 <p class="get-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur mattis eros et mollis. Aenean condimentum diam metus, rutrum consequat dolor efficitur vitae. Donec id dui massa. Cras mattis rhoncus vehicula.</p>

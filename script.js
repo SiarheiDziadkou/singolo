@@ -77,13 +77,13 @@ const submitButton = document.getElementById('submit-btn'),
 
 submitButton.addEventListener('click', () => {
     const subject = document.getElementById('subject').value.toString();
-    if (subject.value == '') {
+    if (subject == '') {
         document.getElementById('subject-result').innerText = 'No subject';
     } else {
         document.getElementById('subject-result').innerText = 'Subject: ' + subject;
     }
     const description = document.getElementById('description').value.toString();
-    if (description.value == '') {
+    if (description == '') {
         document.getElementById('description-result').innerText = 'No description';
     } else {
         document.getElementById('description-result').innerText = 'Description: ' + description;
@@ -99,3 +99,21 @@ closeButton.addEventListener('click', () => {
     document.getElementById('message-block').classList.add('popup-hidden');
 
 });
+
+
+
+const burgerBtn = document.getElementById('burger-menu__button'),
+    burgerNav = document.getElementsByClassName('wrap-nav'),
+    overlay = document.getElementsByClassName('burger-menu__overlay');
+burgerMenu = burgerNav[0];
+overlayMenu = overlay[0];
+
+
+function startBurger() {
+    burgerBtn.classList.toggle('burger-menu__active');
+    burgerMenu.classList.toggle('wrap-nav__active');
+    overlayMenu.classList.toggle('overlay-active');
+}
+
+burgerBtn.onclick = startBurger;
+overlayMenu.onclick = startBurger;
