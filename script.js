@@ -103,7 +103,7 @@ closeButton.addEventListener('click', () => {
 
 
 const burgerBtn = document.getElementById('burger-menu__button'),
-    burgerNav = document.getElementsByClassName('wrap-nav'),
+    burgerNav = document.getElementsByClassName('burger-menu__nav'),
     overlay = document.getElementsByClassName('burger-menu__overlay');
 burgerMenu = burgerNav[0];
 overlayMenu = overlay[0];
@@ -111,7 +111,7 @@ overlayMenu = overlay[0];
 
 function startBurger() {
     burgerBtn.classList.toggle('burger-menu__active');
-    burgerMenu.classList.toggle('wrap-nav__active');
+    burgerMenu.classList.toggle('burger-nav__active');
     overlayMenu.classList.toggle('overlay-active');
 }
 
