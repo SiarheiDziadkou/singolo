@@ -111,8 +111,8 @@ body {
 }
 
 .burger-menu__nav {
-    width: 250px;
-    padding-top: 50px;
+    width: 278px;
+    padding-top: 240px;
     position: fixed;
     z-index: 40;
     display: flex;
@@ -130,10 +130,12 @@ body {
 }
 
 .burger-menu__link {
-    padding: 50px 10px 10px 10px;
+    padding: 0px 0px 27px 71px;
     text-transform: uppercase;
     color: #ffff;
     text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 .burger-menu__link:hover {
@@ -373,7 +375,7 @@ body {
 }
 
 .portfolio {
-    height: 864px;
+    height: auto;
     background-color: #2d303a;
 }
 
@@ -466,7 +468,7 @@ body {
 }
 
 .about {
-    height: 728px;
+    height: auto;
     background-color: #f2f2f2;
 }
 
@@ -733,9 +735,6 @@ textarea::-webkit-input-placeholder {
     .services {
         height: 630px;
     }
-    .portfolio {
-        height: 1000px;
-    }
     #phone-vertical {
         top: 41px;
         left: 72px;
@@ -800,8 +799,15 @@ textarea::-webkit-input-placeholder {
         top: 98px;
         right: 10px;
     }
+    .services {
+        height: auto;
+    }
+    .info-bottom {
+        display: flex;
+        flex-direction: column;
+    }
     .info-line {
-        margin-top: 0;
+        padding-top: 20px;
     }
     .second-colum {
         margin-left: 0;
@@ -826,4 +832,34 @@ textarea::-webkit-input-placeholder {
 
 /*width < 375px*/
 
-@media all and (max-width: 375px) {}
+@media all and (max-width: 375px) {
+    .portfolio {
+        height: 780px;
+        overflow: hidden;
+    }
+    #colums img {
+        width: 151px;
+        height: 128px;
+    }
+    .portfolio-pictures {
+        padding-left: 20px;
+        overflow: hidden;
+    }
+    #portfolio-navi {
+        padding-right: 0;
+    }
+    .staff-colums {
+        display: block;
+    }
+}
+
+
+/*
+
+сделать лого в выплывающем меню
+
+в сервисес сделать контент по середине
+
+
+
+*/
