@@ -112,7 +112,6 @@ body {
 
 .burger-menu__nav {
     width: 278px;
-    padding-top: 240px;
     position: fixed;
     z-index: 40;
     display: flex;
@@ -127,6 +126,15 @@ body {
 .burger-nav__active {
     left: 0;
     transition: 0.3s;
+}
+
+.burger-logo {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: -0.5px;
+    font-weight: 550;
+    margin: 30px 0 220px 70px;
 }
 
 .burger-menu__link {
@@ -452,6 +460,7 @@ body {
 #colums {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #colums img {
@@ -558,7 +567,7 @@ body {
 }
 
 .contact {
-    height: 648px;
+    height: auto;
     background-color: #f06c64;
 }
 
@@ -725,6 +734,17 @@ textarea::-webkit-input-placeholder {
     cursor: pointer;
 }
 
+#submit-btn {
+    width: 136px;
+    height: 38px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #FBC65F;
+    border: solid #FBC65F 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 /*768px <= width < 1020px*/
 
@@ -775,7 +795,7 @@ textarea::-webkit-input-placeholder {
 
 /*375px <= width < 768px*/
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
     .slider-wrap {
         height: 218px;
     }
@@ -802,10 +822,6 @@ textarea::-webkit-input-placeholder {
     .services {
         height: auto;
     }
-    .info-bottom {
-        display: flex;
-        flex-direction: column;
-    }
     .info-line {
         padding-top: 20px;
     }
@@ -826,6 +842,13 @@ textarea::-webkit-input-placeholder {
     }
     #burger-menu__button {
         display: block;
+    }
+    #colums img {
+        width: 151px;
+        height: 128px;
+    }
+    #portfolio-navi {
+        padding-right: 0;
     }
 }
 
@@ -851,15 +874,32 @@ textarea::-webkit-input-placeholder {
     .staff-colums {
         display: block;
     }
+    .colum-staff {
+        margin-bottom: 30px;
+    }
+    .form-area {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form {
+        max-width: 100%;
+    }
+    #submit-btn {
+        width: 100%;
+    }
+    .form-colum {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .footer-info {
+        display: none;
+    }
+    .footer {
+        justify-content: center;
+    }
+    .footer-social {
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+    }
 }
-
-
-/*
-
-сделать лого в выплывающем меню
-
-в сервисес сделать контент по середине
-
-
-
-*/
